@@ -5,7 +5,7 @@ import Display_Bottle from './component/displaybottle/Display_Bottle';
 
 function App() {
   
-  const myData=fetch('../public/bottles.json')
+  const myData=fetch('bottles.json')
   .then((res) => {
     return res.json();
   })

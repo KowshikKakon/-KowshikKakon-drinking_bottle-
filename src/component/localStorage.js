@@ -37,7 +37,7 @@ const removeCartFromLocalStorage = (productId) => {
     
 
     let cart = getDataFromLocalStorage();
-   let updatedcart = cart.filter(item => item.id !== productId)
+   let updatedcart = cart.filter((item ,index)=> index!== productId)
     saveDataToLocalStorage(updatedcart)
 
 

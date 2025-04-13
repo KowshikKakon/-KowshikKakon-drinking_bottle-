@@ -1,5 +1,6 @@
 import React, { use, useEffect, useState } from 'react';
-import './Display_Bottle.css'
+import '../remove/Remove.css'
+import '../remove/Display_Bottle.css'
 import Card_Item from '../cardItem/Card_Item';
 import { addDataToLocalStorage,removeCartFromLocalStorage,getDataFromLocalStorage} from '../localStorage';
 import Remove from '../remove/Remove';
@@ -20,10 +21,10 @@ const Display_Bottle = ({ myData }) => {
     }
     // front end theke remove/id kora...
     const removeCart = (indexToRemove) => {
-       
+       console.log("indexToRemove",indexToRemove);
         
-        const remaining = cart.filter((item,index) => indexToRemove!==index)
-    
+        const remaining = cart.filter((item,index) => index!== indexToRemove)
+    console.log("remaining22:",remaining);
         // cart update kora/cart e value set kora
         setCart(remaining);
         //backend/localstorage er function e value  pass kora...
