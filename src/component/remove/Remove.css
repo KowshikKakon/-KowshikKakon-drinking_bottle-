@@ -1,0 +1,12 @@
+.remove-container{
+
+
+
+    display: flex;
+    gap:10px
+}
+.remove-container img{
+
+
+    width:100px;
+}

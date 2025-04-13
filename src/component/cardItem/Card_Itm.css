@@ -1,0 +1,11 @@
+.item {
+    border: 2px solid lightblue;
+
+    padding: 10px;
+    border-radius: 8px;
+    
+}
+.item img{
+
+    width:250px
+}
